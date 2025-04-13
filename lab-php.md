@@ -1,8 +1,8 @@
-# LAB01: LÀM QUEN VỚi PHP VÀ Xử LÝ BIỂU MẪU
+# LAB01: LÀM QUEN VỚi PHP VÀ XỬ LÝ BIỂU MẪU
 
 ---
 
-### 1. MỤc tiêu
+### 1. Mục tiêu
 - Thực hành nhúng PHP vào tập tin HTML.
 - Sử dụng biến, hằng, lệnh echo, hàm date().
 - Xử lý biểu mẫu với GET và POST.
@@ -253,7 +253,7 @@ $result = $conn->query($sql);
 - 1 ảnh chụp màn hình giao diện hiển thị dữ liệu từ DB.
 
 -------------------------------------------------------------------------------------------------------------
-# LAB04: THÊM - Sửa - XÓA (CRUD) SẢN PHẨM
+# LAB04: THÊM - SỬA - XÓA (CRUD) SẢN PHẨM
 
 ---
 
