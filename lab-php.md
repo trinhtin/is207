@@ -1,4 +1,4 @@
-**LAB01: LÀM QUEN VỚi PHP VÀ Xử LÝ BIỂU MU M\u1eau**
+# LAB01: LÀM QUEN VỚi PHP VÀ Xử LÝ BIỂU MẪU
 
 ---
 
@@ -83,7 +83,7 @@ Tạo file `handle_post.php`:
 
 
 -------------------------------------------------------------------------------------------------------------
-**LAB02: MẢNG VÀ ĐIỀU KIỆN**
+# LAB02: MẢNG VÀ ĐIỀU KIỆN
 
 ---
 
@@ -173,7 +173,7 @@ Tạo file `handle_rate.php`:
 - Chụp màn hình kết quả và nộp qua Moodle hoặc Google Drive.
 
 -------------------------------------------------------------------------------------------------------------
-**LAB03: KẾT NỐI CSDL VÀ HIỂN THỊ DANH SÁCH SẢN PHẨM**
+# LAB03: KẾT NỐI CSDL VÀ HIỂN THỊ DANH SÁCH SẢN PHẨM
 
 ---
 
@@ -253,7 +253,7 @@ $result = $conn->query($sql);
 - 1 ảnh chụp màn hình giao diện hiển thị dữ liệu từ DB.
 
 -------------------------------------------------------------------------------------------------------------
-**LAB04: THÊM - Sửa - XÓA (CRUD) SẢN PHẨM**
+# LAB04: THÊM - Sửa - XÓA (CRUD) SẢN PHẨM
 
 ---
 
