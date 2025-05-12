@@ -191,7 +191,7 @@ header('Content-Type: application/json');
 include 'connect.php';
 
 $keyword = $_POST['keyword'] ?? '';
-$sql = "SELECT * FROM products WHERE name LIKE ?";
+$sql = "SELECT * FROM product WHERE ProductName LIKE ?";
 $stmt = $conn->prepare($sql);
 $param = "%$keyword%";
 $stmt->bind_param("s", $param);
@@ -399,7 +399,7 @@ if ($conn->connect_error) {
 include '../db.php';
 header('Content-Type: application/json');
 
-$res = $conn->query("SELECT * FROM products");
+$res = $conn->query("SELECT * FROM product");
 $data = [];
 while ($row = $res->fetch_assoc()) {
     $data[] = $row;
@@ -420,7 +420,7 @@ $price = $_POST['price'];
 $category = $_POST['category'];
 $link = $_POST['link'];
 
-$sql = "INSERT INTO products (name, price, category, link) VALUES (?, ?, ?, ?)";
+$sql = "INSERT INTO product (ProductName, RegularPrice, CategoryName, ProductLink) VALUES (?, ?, ?, ?)";
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("siss", $name, $price, $category, $link);
 $stmt->execute();
@@ -442,7 +442,7 @@ $price = $_POST['price'];
 $category = $_POST['category'];
 $link = $_POST['link'];
 
-$sql = "UPDATE products SET name=?, price=?, category=?, link=? WHERE id=?";
+$sql = "UPDATE product SET ProductName=?, SalePrice=?, CategoryName=?, ProductLink=? WHERE Id=?";
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("sissi", $name, $price, $category, $link, $id);
 $stmt->execute();
@@ -460,7 +460,7 @@ echo json_encode(['status' => 'updated']);
 include '../db.php';
 $id = $_POST['id'];
 
-$sql = "DELETE FROM products WHERE id=?";
+$sql = "DELETE FROM product WHERE Id=?";
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("i", $id);
 $stmt->execute();
