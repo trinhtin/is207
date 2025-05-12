@@ -82,6 +82,24 @@ document.getElementById('search').addEventListener('keyup', function () {
 
 #### B. Xử lý AJAX và trả về dữ liệu JSON: `searchajax.php`
 
+## 🔌 `connect.php`
+
+```php
+<?php
+$host = 'localhost';
+$user = 'root';
+$pass = '';
+$dbname = 'dealcongnghe';
+$conn = new mysqli($host, $user, $pass, $dbname);
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+?>
+```
+
+---
+## 🔌 `searchajax.php`
+
 ```php
 <?php
 include "connect.php";
